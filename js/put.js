@@ -14,7 +14,7 @@ const res = await fetch(`https://crud-examples.onrender.com/${idInput.value}`, {
     })
     })
     const data = await res.json();
-    console.log(data);
+    form.append(`Its been put`)
 }   
 form.addEventListener("submit", (e)=> {
     e.preventDefault()
