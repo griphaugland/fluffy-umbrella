@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/post.css" />
+    <script src="../js/post.js" defer></script>
   </head>
   <body>
-    <form>
+    <form action="#">
       <div class="inputContainer">
         <label for="name">Name</label>
-        <input name="name" class="nameInput" />
+        <input id="nameInput" class="nameInput" />
       </div>
       <div class="inputContainer">
         <label for="content">Content</label>
-        <input name="content" class="contentInput" />
+        <input id="contentInput" class="contentInput" />
       </div>
+      <button type="submit">Add to api</button>
     </form>
-    <button type="submit">Add to api</button>
   </body>
 </html>
