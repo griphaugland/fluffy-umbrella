@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/put.css" />
+    <script src="../js/put.js" defer></script>
   </head>
   <body>
-    <form action="">
-      <input class="" />
-      <button type="submit"></button>
+    <form action="#">
+      <div class="inputContainer">
+        <label for="id">ID:</label>
+        <input id="idInput" type="number" class="idInput" />
+      </div>
+      <div class="inputContainer">
+        <label for="name">Name</label>
+        <input id="nameInput" type="text" class="nameInput" />
+      </div>
+      <div class="inputContainer">
+        <label for="content">Content</label>
+        <input id="contentInput" type="text" class="contentInput" />
+      </div>
+      <button type="submit">Put</button>
     </form>
   </body>
 </html>
