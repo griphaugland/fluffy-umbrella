@@ -12,9 +12,14 @@ const res = await fetch('https://crud-examples.onrender.com/', {
             content: inputContent.value,
     })
     })
+    if(!res.ok){
+        return body.append(`Houston, we got a problem ${res.status}`)
+    }
+    else {
+        body.append(`Posted it!`)
+    }
     const data = await res.json();
     console.log(data);
-    form.append(`Its been posted`)
 }   
 form.addEventListener("submit", (e)=> {
     e.preventDefault()

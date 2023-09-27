@@ -13,8 +13,13 @@ const res = await fetch(`https://crud-examples.onrender.com/${idInput.value}`, {
             content: inputContent.value,
     })
     })
+    if(!res.ok){
+        return body.append(`Houston, we got a problem ${res.status}`)
+    }
+    else {
+        body.append(`Its been PUT!`)
+    }
     const data = await res.json();
-    form.append(`Its been put`)
 }   
 form.addEventListener("submit", (e)=> {
     e.preventDefault()
