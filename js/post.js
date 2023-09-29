@@ -1,6 +1,7 @@
 
 const button = document.querySelector('button');
 const form = document.querySelector('form');
+const body = document.querySelector('body')
 async function postInfo() {
     const inputName = document.getElementById('nameInput');
     const inputContent = document.getElementById('contentInput');
