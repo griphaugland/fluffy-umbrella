@@ -14,7 +14,7 @@ const res = await fetch(`https://crud-examples.onrender.com/${idInput.value}`, {
     body.append(`Houston, we got a problem ${res.status}`)
     }
     else {
-    body.append(`${id} has been deleeeted`)
+    body.append(`${idInput.value} has been deleeeted`)
     }
     const data = await res.json();
 }   
